@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Wepaddleforthecure</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Paddle For The Cure</title>
+
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
   <%= csrf_meta_tags %>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+  <![endif]-->
+
 </head>
 <body>
 
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to "Paddle For The Cure", root_path, :class => 'navbar-brand' %>
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+            <li class="<%= 'active' if current_page?(team_path) %>"><%= link_to "Team", team_path %></li>
+            <li class="<%= 'active' if current_page?(events_path) %>"><%= link_to "Events", events_path %></li>
+            <li class="<%= 'active' if current_page?(photos_path) %>"><%= link_to "Photos", photos_path %></li>
+            <li class="<%= 'active' if current_page?(support_path) %>"><%= link_to "Support", support_path %></li>
+            <li class="<%= 'active' if current_page?(news_path) %>"><%= link_to "News", news_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <%= yield %>
+
+
+<!-- FOOTER -->
+   <footer>
+     <p class="pull-right"><a href="#">Back to top</a></p>
+     <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Paddle For The Cure</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://wepaddleforthecure.org" property="cc:attributionName" rel="cc:attributionURL">Amanda Li</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+   </footer>
+
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
