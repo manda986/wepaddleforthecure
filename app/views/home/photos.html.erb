@@ -1,12 +1,54 @@
-<div class="row featurette" id="photos">
-  <div class="col-md-7">
-    <h2 class="featurette-heading">Photos</h2>
-    <p class="lead">
-        Under construction
-    </p>
-  </div>
-  <div class="col-md-5">
-    photo gallery
-  </div>
-</div>
+<!-- Carousel
+ ================================================== -->
+ <div id="myCarousel" class="carousel slide">
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
+     <li data-target="#myCarousel" data-slide-to="4"></li>
+   </ol>
+   <div class="carousel-inner">
+     <div class="item active">
+       <%= image_tag "photo 1.JPG" %>
+       <div class="container">
+         <div class="carousel-caption">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <%= image_tag "photo 2.JPG" %>
+       <div class="container">
+         <div class="carousel-caption">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <%= image_tag "photo 6.JPG" %>
+       <div class="container">
+         <div class="carousel-caption">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <%= image_tag "world_fair_marina.JPG" %>
+       <div class="container">
+         <div class="carousel-caption">
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <%= image_tag "race_for_the_cure_2.JPG" %>
+       <div class="container">
+         <div class="carousel-caption">
+         </div>
+       </div>
+     </div>
+   </div>
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left"></span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right white"></span></a>
+ </div><!-- /.carousel -->
 
