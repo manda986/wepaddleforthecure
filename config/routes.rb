@@ -9,6 +9,7 @@ Wepaddleforthecure::Application.routes.draw do
   get '/about' => 'home#about'
   get '/events' => 'home#events'
   get '/photos' => 'home#photos'
+  get '/directions' => 'home#directions'
   get '/support' => 'home#support'
   get '/news' => 'home#news'
 
