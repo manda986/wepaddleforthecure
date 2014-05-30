@@ -6,7 +6,7 @@ Wepaddleforthecure::Application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-  get '/team' => 'home#team'
+  get '/about' => 'home#about'
   get '/events' => 'home#events'
   get '/photos' => 'home#photos'
   get '/support' => 'home#support'
