@@ -33,7 +33,7 @@
       <!-- Paypal donate button -->
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_donations">
-      <input type="hidden" name="business" value="jameskayak@gmail.com">
+      <input type="hidden" name="business" value="wepaddleforthecure@gmail.com">
       <input type="hidden" name="lc" value="US">
       <input type="hidden" name="item_name" value="Paddle For The Cure">
       <input type="hidden" name="no_note" value="0">
@@ -54,15 +54,53 @@
 
   <div class="row featurette">
 
-  <div class="col-md-7">
-    <h2 class="featurette-heading">We're on Facebook!</h2>
-    <p class="lead">Check out our Paddle For the Cure Facebook Page for team updates
-    </p>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Paddle for the Cure Video</h2>
+        <p class="text-left">We are winning against cancer- never give up, never give in. We leverage fear to move
+          forward and make a difference. We learned we have more confidence, capability and charisma we never knew. <br /><br />
+We overcame a great deal of obstacles and called it freedom. As long as we are together, we may be bruised but we will
+          NEVER BE BEATEN!
+        </p>
+      </div>
+      <div class="col-md-5">
+        <iframe width="420" height="315" src="//www.youtube.com/embed/iQbjAmePF1w" frameborder="0" allowfullscreen></iframe>
+      </div>
   </div>
-  <div class="col-md-5">
-    <%= link_to image_tag("fb_icon_325x325.png", :class => 'img-reponsive pull-left', :width => '100'), 'https://www.facebook.com/Paddle4theCure' %><%=  %>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-5">
+      <%= link_to image_tag("bowling.jpg", :class => 'img-reponsive pull-left', :width => '420'), 'https://www.facebook.com/Paddle4theCure' %><%=  %>
+    </div>
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Bowl for the Cure</h2>
+      <p class="text-left">
+        August 26th from 4:30 to 7:00 PM  <br />
+        Bowlmor Lanes at 222 West 44th Street, New York, NY 10036<br /><br />
+        $60 per person – includes two (2) hours of bowling, shoes, refreshments and t-shirt.<br />
+        20% of each registration will be donated to Susan G. Komen Greater NYC.<br />
+        RSVP by July 31, 2014 to info@wepaddleforthecure.org<br /><br />
+        Raffle tickets are $10 each or five tickets for $40 if purchased in advance.<br />
+        Form a team or come alone and make new friends – there will be 12 people per lane.<br /><br />
+        For more information, check out our <%= link_to 'flyer', asset_path('Bowl for the Cure Flyer 2014.pdf') %>!
+      </p>
+    </div>
   </div>
-</div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">We're on Facebook!</h2>
+        <p class="lead">Check out our Paddle For the Cure Facebook Page for team updates
+        </p>
+      </div>
+      <div class="col-md-5">
+        <%= link_to image_tag("fb_icon_325x325.png", :class => 'img-reponsive pull-left', :width => '100'), 'https://www.facebook.com/Paddle4theCure' %><%=  %>
+      </div>
+  </div>
+
 </div><!-- /.container -->
 
 
